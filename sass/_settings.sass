@@ -3,14 +3,24 @@
   &::after, &::before
     box-sizing: border-box
 
-.body
-  // font-family: 'Mulish', sans-serif
-  // font-family: 'Nunito', sans-serif
-  color: $text-color
+body
+  color: $primary
   background-color: $secondary
-  @include scrollbars(10px,4px, $footer-text-color, $secondary)
+  font-family: 'Roboto', sans-serif
+  font-style: normal
+  font-size: 62.5%
+  font-weight: 400
+  @include scrollbars(1rem, 0.4rem, $footer-text-color, $secondary)
+
+a
+  text-decoration: none
+
+a, input
+  color: inherit
+
 .container
-  max-width: 1110px
+  max-width: 1440px
   margin: auto
+
 img
   max-width: 100%
